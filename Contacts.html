@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>AI RECRUITING SYSTEM</title>
+    </head>
+    <!--header starting-->
+    <header>  
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <li class="fa fa-bars"></li>
+        </label>
+        <img  class="logo"  src="images/Project.png" >
+      <ul>
+        <li><a  class="active" href="http://127.0.0.1:5500/index.html" >Home</a></li>
+        <li><a href="http://127.0.0.1:5500/about.html#" >About Us</a></li>
+        <li><a href="http://127.0.0.1:5500/services.html" >Services</a></li>
+        <li><a href="http://127.0.0.1:5500/Training.html" >Training</a></li>
+        <li><a href="http://127.0.0.1:5500/Contacts.html#" >Contact Us</a></li>
+        <li><a href="http://127.0.0.1:5500/Blogs.html" >Blogs</a></li>
+        <button><a  href="#">Sign Up</a></button>
+     </ul>
+    </nav>
+    </header>
+    <body>
+      <div class="container-fluid ab">
+        <div class="container">
+          <div class=" fas fa-user-friends fa-2x ab-icon"></div>
+            <div class="col-sm-12">
+              <h1>info.us@metaforgeit.com</h1>
+              <p>Hiring in the 21th century</p>
+            </div>
+        </div>
+      </div>
+      <div class="conatiner fre" style="font-family:Arial, Helvetica, sans-serif; padding: 0px 0px 0px 100px;">
+        <h1 style="text-align: center; font-weight: bold; padding: 30px;">Frequently Asked Question</h1>
+        <p style="text-align: center; margin-top: -20px; padding:0px 20px 50px 20px;">Have questions? Check if we have already answered it below.</p>
+      </div>
+      <div class="container are" style="font-family:Arial, Helvetica, sans-serif;">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h3 class="heading" onclick="togglePassage(this)" style="color: red;">
+                What is EnigmaScore?
+                <span class="arrow" style="padding: 220px;">▼</span>
+            </h3>
+            <div class="passage">
+                <p>You can design an interview, test it and activate it, then send the link to up to 400 applicants. Enigma will identify them, then ask your questions, analyze their answers and provide a list of qualified applicants with a measure of their individual attributes displayed as a bar chart so you can easily compare them with your other qualified applicants.</p>
+            </div>
+            <br>
+            <h3 class="heading" onclick="togglePassage(this)" style="color: red;">
+                What sort of questions does 
+                EnigmaScore ask an applicant?
+                <span class="arrow" >▼</span>
+            </h3>
+            <div class="passage">
+                <p>You can ask multi-choice questions, numerical questions, survey questions and open questions (e.g. those that don’t have a right or wrong answer but get an opinion). You can also record candidates answering questions and watch them later. Enigma can suggest appropriate questions and you can simply use any of Enigma’s pre-configured interviews and use as-is or modify it to suit the job requirements.</p>
+            </div>
+            <br>
+            <h3 class="heading" onclick="togglePassage(this)" style="color: red;">
+              Who are EnigmaScore Ltd?
+              <span class="arrow" >▼</span>
+          </h3>
+          <div class="passage">
+              <p>EnigmaScore Ltd has created an AI-powered robotic interview system that prospective employers can use to create job interviews.</p>
+          </div>
+          <br>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <h3 class="heading" onclick="togglePassage(this)" style="color: red;">
+                How do I post an interview on EnigmaScore?
+                <span class="arrow" style="padding: 100px;">▼</span>
+            </h3>
+            <div class="passage">
+                <p>Posting an interview is free. You simply log in and enter the questions you want to ask, grouping them in sections or assessments, each section represented by a bar on the bar chart displayed on your tablet or screen. You can also break the assessments into different mini-interviews or checkpoints which candidates must pass before proceeding to the next and you set the criteria for elevating candidates.</p>
+            </div>
+            <br>
+            <h3 class="heading" onclick="togglePassage(this)" style="color: red;">
+                Do I pay for Interviews before or after the interviews are completed?
+                <span class="arrow">▼</span>
+            </h3>
+            <div class="passage">
+                <p>You can create your interview and test it extensively for as long as you wish and change the questions, adding new ones or deleting those that you decide you don’t want. This is entirely free. Only when you are ready to deploy your interview do you need to take out a subscription. This costs $50 a month (around KES 5000/- or £37) and it gives you a total of 400 interviews which can be spread over several months. When you have completed your recruitment you can archive the interview and cancel the subscription.</p>
+            </div>
+        </div>
+    
+        <script>
+            function togglePassage(element) {
+                var passage = element.nextElementSibling;
+                var arrow = element.querySelector('.arrow');
+                if (passage.style.display === "none" || passage.style.display === "") {
+                    passage.style.display = "block";
+                    arrow.textContent = "▲"; // Upward arrow
+                } else {
+                    passage.style.display = "none";
+                    arrow.textContent = "▼"; // Downward arrow
+                }
+            }
+    
+            // Initialize passages as hidden
+            document.querySelectorAll('.passage').forEach(function(passage) {
+                passage.style.display = 'none';
+            });
+        </script>
+      </div>
+    </div>
+    
+      <section>
+        <div class="container req">
+          <div class="row">
+            <h1 style="text-align:left;">Request Demo</h1>
+            <div class="col-sm-12 col-md-6">
+              <p>A tailor-made demo showing you how EnigmaScore can help you grow your business.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container-fluid foot">
+          <div class="container">
+          <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <img  class="lo" src="images/Project.png">
+              </div>
+            <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <h3 style="font-size: 20px;">Company details</h3>
+              <div class="fa fa-envelope foot-icon">
+                <span>info.us@metaforgeit.com</span></div>
+              <div class="fa fa-clock-o foot-icon">
+                <span>9:00AM-5:00PM</span></div>
+            </div>
+            <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <h3 style="font-size:20px;">Helpline Link</h3>
+              <div class="ca">> Home</div>
+              <div class="ca">> About</div>
+              <div class="ca">> Training</div>
+              <div class="ca">> services</div>
+            </div>
+            <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <h3 style="font-size:20px;">Social media icons</h3>
+              <div class="fa fa-facebook-square fa-md sol-icon">
+                <span>Facebook</span></div>
+
+              <div class="fa fa-youtube fa-md sol-icon">
+                <span>Youtube</span>
+              </div>
+              <div class="fa fa-twitter-square fa-md sol-icon" > 
+                <span>Twitter</span>
+              </div>
+              <div class="fa fa-instagram fa-md sol-icon">
+                <span>Instagram</span>
+              </div>
+              <br>
+            </div>
+            </div>
+            </div>
+          </div>
+          <div class="container-fluid end">
+            <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div>
+                  <p>copyright &copy2024 MetaForgeIT,ALL Rights Reserved.</p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" style="text-align: end;">
+                <ul><a>
+                  <span>Privacy Policy</span>
+                </a>
+                  <a>
+                   <span> | Cookie Policy</span></a>
+                </ul>
+              </div>
+            </div>
+            </div>
+          </div>
+        </footer>
+    </body>
+</html>

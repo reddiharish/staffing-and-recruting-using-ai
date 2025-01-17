@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #16384c;
+            height: 100vh;
+        }
+        .container {
+            position: relative;
+            width: 1100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        .container .card {
+            max-width: 300px;
+            position: relative;
+            height: 360px;
+            background-color: #fff;
+            margin: 30px 10px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+            transition: 0.3s ease-in-out;
+        }
+        .container .card:hover {
+            transform: translateY(-20px);
+            z-index: 1;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .container .card .imgBx {
+            position: relative;
+            width: 100%;
+            height: 150px;
+        }
+        .container .card .imgBx img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .container .card .content {
+            position: relative;
+            margin-top: 10px;
+            text-align: center;
+            color: #111;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .container .card:hover .content {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/istockphoto-1366137792-612x612.jpg" alt="Image 1">
+            </div>
+            <div class="content">
+                <h2>Card One</h2>
+                <p>Examples of mobile apps include gaming apps that 
+                    entertain, productivity apps that make tracking 
+                    and accomplishing work easier, ecommerce applications,
+                    and health-tracking apps to maintain people's mental 
+                    and physical well-being. Users are 
+                    not the only ones who benefit from applications.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/istockphoto-1366137792-612x612.jpg" alt="Image 2">
+            </div>
+            <div class="content">
+                <h2>Card Two</h2>
+                <p>Examples of mobile apps include gaming apps that 
+                    entertain, productivity apps that make tracking 
+                    and accomplishing work easier, ecommerce applications,
+                    and health-tracking apps to maintain people's mental 
+                    and physical well-being. Users are 
+                    not the only ones who benefit from applications.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

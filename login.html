@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>AI RECRUITING SYSTEM</title>
+</head>
+<body style="background-image: url('images/240_F_656176995_g3rSGN72uqgwyx2Appeb7fmHNQGKUdte.jpg');">
+
+    <div class="wrapper">
+        <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Type Email" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder=" Type password">
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+            <button id="loadBtn" onclick="startLoading()">Log In</button>
+            <script>
+                function startLoading() {
+                    var button = document.getElementById("loadBtn");
+                    
+                    button.classList.add("loading");
+                    button.disabled = true; // Disable button to prevent multiple clicks
+                
+                    // Simulate a loading process (e.g., an API call)
+                    setTimeout(function() {
+                        button.classList.remove("loading");
+                        button.classList.add("success");
+                        button.innerText = "Log In successful!";
+                        button.disabled = false; // Re-enable the button if you want it to be clickable again
+                    }, 4000); // Change this to the actual loading time required
+                }
+
+            </script>
+            <div class="remember-forgot" style=" text-align: center;padding:20px;">
+                <label><input type="checkbox" >Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <div class="hire">
+                <h3>New to Hiresmart?</h3>
+                <p>Register as an  <a href="#" style="color: rgb(237, 236, 237);">Employer</a></p>
+                <p>Register as an  <a href="#" style="color: rgb(247, 247, 247);">Applicant</a></p>
+            </div>
+
+    </div>
+</body>
+</html>
+

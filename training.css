@@ -1,0 +1,84 @@
+Css
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 0; */
+}
+body{
+    background: lightcyan;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+      
+}
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
+.contact-box{
+    background-color: white;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 40px 60px 60px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: rgb(30, 140, 237);
+    color: white;
+}
+h1{
+    margin-bottom: 10px;
+}
+.container p{
+   margin-bottom: 20px; 
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    padding: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+}
+label{
+    margin-bottom: 5px;
+    display: block;
+    color: lightblue;
+}
+button{
+    flex: auto;
+    /* display: block; */
+    /* height: 35px; */
+    /* border-radius: 30px; */
+    box-shadow: 25px;
+}
+.contact-left h3{
+    color: burlywood;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contact-right h3{
+    /* color: burlywood; */
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+
+tr td{
+    padding-top: 20px;
+}
